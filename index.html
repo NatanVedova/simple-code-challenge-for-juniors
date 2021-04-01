@@ -5,33 +5,59 @@
     </head>
     <body>
         <h1>Prencha o formulario</h1>
-        <p>Este e um formulario</p>
+        <p>formulario</p>
         <form action="" enctype="multipart/form-data">
             <div>
                 <label for="">Nome</label>
-                <input name="nome" required="required" placeholder="Digite seu nome " type="text"
+                <input name="nome" required="required" placeholder="Digite seu nome " type="text">
             </div>
                 
             <div>
                 <label for="">E-mail</label>
-                <input name="E-mail" required="required" placeholder="Digite seu nome " type="text"
+                <input name="E-mail" required="required" placeholder="Digite seu nome " type="text">
             </div>
              
             <div>
                 <label for="">selecione sua cidade</label>
-                <select required="required" name="cidade"
-                <option selected="selected" value="">Selecione</option>
-                <option value="1">Maringa</option>
-                <option value="2">Londrina</option>
-                <option value="3">Terra Boa</option>
+                <select required="required" name="cidade">
+                    <option selected="selected" value="">Selecione</option>
+                    <option value="1">Maringa</option>
+                    <option value="2">Londrina</option>
+                    <option value="3">Terra Boa</option>
+                </select>
                 </div>
 
                 <div>
+                    <label for="">Sua Foto</label>
+                    <input required="required" name="Foto" type="file">
+                 </div>
+
+                <div>
                     <p>Selecione o seu sexo:</p>
-                    <label for="sexo1"><input name="sexo" id="sexo1" value="m" type="radio">masculino</label><br>
-                    <label for="sexo2"><input name="sexo" id="sexo2" value="f" type="radio">feminino</label><br>
+                    <label for="sexo1"><input name="sexo" id="sexo1" value="m" type="radio"> masculino</label>
+                    <label for="sexo2"><input name="sexo" id="sexo2" value="f" type="radio"> feminino</label>
                 </div>
                 
+                <div>
+                    <label for="">Biografia</label><br>
+                    <textarea name="Biografia" placeholder="Digite sua Biografia" required="required" cols="30" rows="5"></textarea>
+                 </div>
+
+                 <div>
+                    <label for="">Senha</label>
+                    <input required="required" placeholder="Digite sua Senha" name="Senha" type="password">
+                 </div>
+
+                 <div>
+                     <label for="">
+                         <input name="newsletter"  id="noticias"type="checkbox">
+                        Deseja receber e-mails promocionais e noticias?</label>
+                 </div>
+
+                <div>
+                    <button name="enviar" value-="1" type="submit">Enviar </button>
+                    
+                </div>
                     
         
  
