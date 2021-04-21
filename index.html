@@ -2,10 +2,12 @@
     <head>
         <meta charset="utf-8">
         <title>formulario</title>
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="">
     </head>
     <body>
-        <h1>Prencha o formulario</h1>
-        <p>formulario</p>
+        <h1 id="titulo">Prencha o formulario</h1><br>
+        <p id="subtitulo">formulario</p><br><br>
+        
         <form action="" enctype="multipart/form-data">
             <div>
                 <label for="">Nome</label>
@@ -13,11 +15,11 @@
             </div>
                 
             <div>
-                <label for="">E-mail</label>
+                <label for="e-mails">E-mail</label>
                 <input name="E-mail" required="required" placeholder="Digite seu nome " type="text">
             </div>
              
-            <div>
+            <div class="campo">
                 <label for="">selecione sua cidade</label>
                 <select required="required" name="cidade">
                     <option selected="selected" value="">Selecione</option>
@@ -26,12 +28,7 @@
                     <option value="3">Terra Boa</option>
                 </select>
                 </div>
-
-                <div>
-                    <label for="">Sua Foto</label>
-                    <input required="required" name="Foto" type="file">
-                 </div>
-
+                
                 <div>
                     <p>Selecione o seu sexo:</p>
                     <label for="sexo1"><input name="sexo" id="sexo1" value="m" type="radio"> masculino</label>
